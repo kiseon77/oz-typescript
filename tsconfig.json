@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016", //js code를 es2016에 맞춰서 생성해라
+    "module": "commonjs", 
+    "esModuleInterop": true, //commonjs를 쉽게 export import를 좀 더 쉽게 사용할 수 있도록 
+    "forceConsistentCasingInFileNames": true, //대소문자 일관을을 강제로 할지
+    "strict": true, //엄격한 타입 검사
+    "skipLibCheck": true, //d.ts같은 타입 선언 파일의 타입 검사를 생략 할것인가
+    "outDir": "dist", //js를 어느 디렉토리에 저장할지
+    "noUncheckedIndexedAccess": true, //index에 접근 할 때 더 엄격한 타입 검증을 할지
+    //"lib": ["ES2022", "DOM"] //기본 설정을 변경 할 수 있음, 설정 할 경우 설정 한 것만 포함하므로 필요한게 누락 될 수 있음.
+  },
+  "include": ["src/**/*"] //컴파일 할 파일 지정
+}
